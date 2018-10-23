@@ -1,0 +1,870 @@
+*{
+  transition: 0.5s;
+}
+  body{
+      width: 100%;
+      height: 100%;
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+    background: rgb(214, 214, 214);
+  }
+ .img__body{ 
+     width: 100%;
+     height: 1000px;
+    background-image: linear-gradient(to top, rgb(214, 214, 214) 0%, transparent 100%), url("../images/photo37001_s.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+ h2, h3 {
+   margin: 0;
+ }
+  li {
+   display: block;
+   text-decoration: none;
+  }
+  a { 
+   border: 0;
+  }
+  a:hover {
+    color: #000;
+  }
+.container { 
+   padding: 0;
+   background-color: #fff;
+}
+.ofer {
+  width: 100%;
+  padding-top: 40px;
+}
+.ofer__title {
+  font-size: 45px;
+  font-weight: 500;
+  padding-left: 20px;
+  margin: 0;
+  padding: 0;
+}
+.ofer__title_two {
+  font-size: 40px;
+}
+.ofer__title_three {
+font-size: 25px;
+padding: 10px 10px 10px 0;
+}
+.ofer__text {
+  font-size: 14px;
+  padding-top: 10px;
+  margin: 0 10px 0 10px;
+  line-height: 1.5em;
+  padding-bottom: 34px;
+}
+/* Перыйэкран */
+.header{
+  margin-top: 50px;
+  padding: 0;
+}
+header, nav, .navbar, .row {
+  padding: 0;
+}
+.logo {
+    background: #000;
+    padding: 26px 57px;
+}
+
+.navbar-nav {
+  background: #fff;
+}
+.nav-item {
+    position: relative;
+    width: 167px;
+    height: 175px;
+    margin: 0;
+}
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 0;
+    background-color: #e0d100;
+    transition-duration: 0.5s; 
+  }
+  .nav-item:hover::after{
+    height: 100%;
+  }
+  .nav-item:nth-last-child(1){
+    background-color: #e6e6e6;
+  }
+  .nav-item:nth-last-child(3){
+    background-color: #e6e6e6;
+  }
+  .active{
+    background-color: #e0d100;
+  }
+  
+  .nav-link {
+    margin-top: 65px;
+    text-align: center;
+      color: #000;
+      font: bold 21px/24px Lato;
+      text-decoration: none;
+   }
+.effect {
+  position: relative;
+  width: 570px;
+  height: 266px;
+  overflow: hidden;
+}
+  .photo {
+    width: 100%;
+    height: 100%;
+  }
+.caption {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: rgba(28, 27, 27, 0.75);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+.caption h5 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 120px;
+  }
+  .caption a {
+ text-decoration: none;
+ color: #fff;
+  }
+  .effect:hover .caption {
+    top: 0px;
+  }
+  .caption a:hover {
+    color: #e0d100;
+  }
+  .effect_link {
+    position: relative;
+    width: 285px;
+    height: 267px;
+    overflow: hidden;
+  }
+  .photo_girl {
+  height: 100%;
+  width: 100%;
+}
+  .caption_link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: rgba(28, 27, 27, 0.75);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  }
+  .caption_link-img {
+    margin-top: 120px;
+    margin-left: 130px;
+  }
+  .effect_link:hover .caption_link {
+    top: 0px;
+  }
+  .caption_link-img:hover {
+    transform: rotate(360deg) scale(1.5);
+  }
+
+/* второй экран */
+.ofer_yelow {
+  background: #e0d100;
+  width: 100%;
+}
+.ofer__title_yelow {
+  color: #e0d100;
+}
+.photo_motor {
+  width: 100%;
+  height: 100%;
+}
+.ofer_black {
+  background: #000;
+}
+.ofer__text_white {
+  color: #fff;
+}
+/* третий экран */
+.photo_axle {
+  height: 100%;
+  width: 100%;
+}
+.photo_car {
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  position: relative;
+  width: 180px;
+  height: 56px;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 13px;
+  border: 0;
+  border-radius:0;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  height: 0;
+  background-color: #e0d100;
+  transition-duration: 0.5s; 
+}
+.btn:hover::after{
+  height: 100%;
+}
+  /*четверный экран*/
+  .photo_salon {
+    width: 100%;
+    height: 100%;
+  }
+  .listBig__col {
+    position: relative;
+      width: 100%;
+      height: 72px;
+      background: #000;
+      padding: 12px 26px;
+      text-align: center;
+      border-bottom: 1px solid #3b3a3a;
+    }
+    .listBig__link {
+      width: 150px;
+      color: #fff;
+      font-size: 21px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .listBig__col::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%; 
+      height: 0;
+      background-color: #e0d100;
+      transition-duration: 0.5s; 
+    }
+    .listBig__col:hover::after{
+      height: 100%;
+    }
+    .testimonials {
+      width: 100%;
+      height: 597px;
+      background: #e0d100;
+    }
+    .ofer__title_four {
+      font-size: 34px;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 32px;
+    }
+    .photo_man {
+      width: 220px;
+      height: 220px;
+      background: url('https://livedemo00.template-help.com/wordpress_53012/wp-content/uploads/2011/07/testi_1-225x225.jpg');
+      margin-left: 30px;
+      border-radius: 50%;  
+      margin-top: 10px;    
+    }
+    .ofer__text_link {
+    padding: 30px 30px;
+     text-align: center; 
+     font-size: 14px; 
+     line-height: 1.5em; 
+    }
+    .text_link {    
+      color: #000;      
+    }
+  .ofer__text_bold {
+      font-size: 22px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 15px;
+      padding-bottom: 60px;
+  }
+  .maps {
+    margin-top: 60px;
+    width: 100%;
+    height: 336px;
+  }
+  .address {
+    position: relative;
+  }
+  .address__name {
+   position: absolute;
+   width: 285px;
+   height: 336px;
+   background-color: #e0d100bb;
+   margin-top: 60px;
+   margin-left: 285px;
+   padding: 40px 35px;
+   text-align: center;
+   line-height: 1.3em;
+  }
+  .address__name_address {
+    font-size: 17px;
+  }
+  .address__name_schedule {
+    font-size:  15px;
+    margin-top: 30px;
+  }
+  /*пятный экран*/
+  footer {
+    margin: 0;
+    padding: 0;
+  }
+  .social {
+    margin: 0;
+    padding: 0;
+  }
+  .social__li {
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+  .facebook {
+    background: #e0d100;
+  }
+  .twitter {
+    background: #000;
+  }
+  .social__li a {
+    text-align: center;
+    padding-top: 11px;
+    float: left;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    margin-top: -16px;
+    }
+
+  .footer__text {
+    margin: 0;
+    padding-left: 60px;
+    padding-bottom: 25px;
+    padding-top: 12px;
+  }
+  .footer__text a{
+  text-decoration: none;
+  color: #777;  
+}
+.facebook_icon:hover, .twitter_icon:hover {
+  transform: rotate(360deg);
+}
+
+
+  @media (max-width: 1199.98px) {
+
+    .nav-item {
+       width: 141px; 
+      }
+    
+    .logo {
+      padding: 26px 32px;
+    }
+    .photo {
+      width: 480px;
+    }
+    .effect {
+      width: 100%;
+      height: 220px;
+    }
+    .effect_link {
+      width: 240px;
+      height: 229px;
+    }
+    .ofer {
+      padding-top: 20px;
+    }
+    .texts {
+      width: 200px;
+      margin-left: 15px;
+    }
+    .ofer__title {
+      font-size: auto;
+    }  
+    .ofer__title_two {
+      font-size: 25px;
+    }  
+    .photo_girl {
+      width: 100%;
+      height: 240px;
+    }
+    .photo_motor {
+      width: 245px;
+      height: 234px;
+    }
+    .photo_axle {
+      height: 230px;
+    }
+    .photo_car {
+      width: 480px;
+    }
+    .photo_salon {
+      height: 230px;
+    }
+    .photo_man {
+      width: 200px;
+      height: 200px;
+      margin-left: 20px;
+    }
+    .ofer__text{
+      padding-bottom: 20px;
+    }
+    .ofer__text_bold {
+      font-size: 20px;
+      padding-bottom: 15px;
+    }
+    .ofer__title_three {
+      font-size: 18px;
+    }
+    .btn {
+      position: relative;
+      width: 110px;
+      height: 46px;
+      background: #000;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding-top: 13px;
+      border-radius: 0;
+    }
+    .ofer__title_four {
+      font-size: 28px;
+      font-weight: 500;
+      padding: 19px 15px;
+    }
+    .ofer__text_link {
+     padding-top: 20px;
+    } 
+    .listBig__col {
+        height: 68px;
+        padding: 7px 26px;
+    }
+    .listBig__link {
+        font-size: 18px;
+    } 
+    .testimonials {
+      height: 587px;
+    } 
+    .maps {
+      margin-top: 50px;
+    }
+    .address__name {
+      margin-top: 50px;
+     width: 251px;
+     margin-left: 230px;
+    }
+    .address__name_address {
+      font-size: 16px;
+    }
+    .address__name_phone {
+      font-size: 23px;
+    }
+    .address__name_schedule {
+      margin-top: 20px;
+    }
+    .social__li a {
+      width: 67px;
+      height: 67px;
+      }  
+    .footer__text {
+      padding-bottom: 2px;
+    } 
+     
+  }    
+      
+  @media (max-width: 991.98px)   {
+
+  .nav-item { width: 100px;
+  }
+  .nav-link {
+    font: bold 16px/19px Lato;
+   }
+   .logo {
+    padding: 26px 15px;
+  }
+  .ofer {
+    padding-top: 10px;
+  }
+  .effect {
+    height: 170px;
+  }
+  .effect_link {
+    width: 100%;
+    height: 165px;
+  }
+  .photo {
+    width: 100%;
+  }
+  .photo_girl, .photo_motor, .photo_axle {
+    height: 170px;
+    width: 100%;
+  }
+  .ofer__title {
+    font-size: 20px;
+  }  
+  .ofer__title_two {
+    font-size: 20px;
+  }  
+  .ofer__title_three {
+    font-size: 16px;
+  }
+  .ofer__text {
+    font-size: 13px;
+    padding-bottom: 0;
+  }
+  .texts {
+    width: 170px;
+    margin-left: 5px;
+  }
+  .ofer__text_width, .ofer__text_big {
+    font-size: 12px;
+  }
+  .fer__title_three {
+    font-size: 11px;
+  }
+  .ofer__text_big {
+    padding: 0; 
+   }
+ 
+    .btn {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .ofer__title_four {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 13px 15px;
+  }
+  .photo_man {
+    width: 160px;
+    height: 160px;
+    background-position: 50% 50%;
+    margin: auto;
+  }
+  .ofer__text_link {
+   padding: 15px 5px;
+
+  } 
+  .listBig__col {
+      height: 61px;
+      padding: 7px 18px;
+  }
+  .listBig__link {
+      font-size: 14px;
+  } 
+  .testimonials {
+    height: 567px;
+  } 
+  .maps {
+    margin-top: 9px;
+  }
+  .address__name {
+    margin-top: 9px;
+   width: 180px;
+   margin-left: 180px;
+   padding: 30px 5px;
+  }
+  .address__name_address {
+    font-size: 14px;
+  }
+  .address__name_phone {
+    font-size: 20px;
+  }
+  .address__name_schedule {
+    margin-top: 20px;
+  }
+  
+  .social__li a {
+    text-align: center;
+    padding: 0;
+    float: left;
+    width:45px;
+    height: 45px;
+    overflow: hidden;
+    margin-top: -16px;
+    }  
+  .footer__text {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  } 
+
+}
+  
+   @media (max-width: 767.98px) {
+     .navbar-toggler {
+       height: 25px;
+       width: 450px;
+       margin: auto;
+       margin-bottom: 20px;
+       padding: 0;
+     }
+     .navbar-light .navbar-toggler-icon_custom {
+       height: 40px;
+       width: 100%;
+      color: #e0d100;
+      background: #000;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#FFDA3d' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+         
+     .logo {
+       margin: auto;
+     }   
+    .container{  
+      width: auto;    
+      background: #000;
+      }
+      .ofer_white {
+        background: #fff;
+      }
+      
+      .nav-item { width: 100%;
+      }
+      .nav-link {
+        font: bold 25px Lato;
+       }
+       .text {
+         background: #fff;
+       }
+       .ofer {
+        width: auto;
+        padding-top: 30px;
+      }
+      .ofer__title {
+        width: auto;
+        font-size: 50px;
+        font-weight: 500;
+        padding-left: 20px;
+        margin: 0;
+        padding: 0;
+      }
+      .ofer__title_two {
+        font-size: 40px;
+      }
+      .ofer__title_three {
+      font-size: 25px;
+      padding: 10px 10px 10px 0;
+      }
+      .ofer__text {
+        font-size: 14px;
+        padding-top: 10px;
+        margin: 0 10px 0 10px;
+        line-height: 1.5em;
+        padding-bottom: 34px;
+      }
+     .container .footer_background {
+        margin: 0;
+        background: #fff;
+      }
+      .footer__text {
+        padding-top: 15px;
+        font-size: 13px;
+      }
+      .texts {
+        width: auto;
+        margin-left: 25px;
+      }
+      .photo_girl, .photo_motor, .photo_axle, .photo_salon {
+        height:100%;
+        width: 100%;
+      } 
+      .ofer__title_four {
+        font-size: 42px;
+        text-align: center;
+        padding: 30px 30px;
+      }
+      .listBig__col {
+        height: 46px;
+        font-size: 20px;
+      }
+      .photo_man {
+        width: 220px;
+        height: 220px;
+        margin-left: 160px;      
+      }
+      .ofer__text_link {
+        padding: 30px 30px;
+       font-size: 18px; 
+      }
+      .ofer__text_bold {
+        font-size: 23px;
+        padding-bottom: 35px;
+      }
+      .effect_link {
+        height: 245px;
+      }
+   .address__name {
+      width: 285px;
+      height: 338px;
+      margin-top: 10px;
+      margin-left: 255px;
+      padding: 40px 35px;
+     }
+  .address__name_schedule {
+      font-size:  15px;
+      margin-top: 20px;
+    }
+    .address__name_phone {
+      font-size: 28px;
+    }
+    .social {
+      margin-top: 17px;
+      margin-right: -15px;
+    }
+    .photo_car {
+      width: 100%;
+    }
+   
+  }
+  @media (max-width: 575.98px) {
+    .nav-item { width: 100%;
+    }
+    .container{
+      width: auto;
+     background: #000;
+     }
+     .nav-link {
+      font: bold 31px/34px Lato;
+     }
+     .texts {
+      width: auto;
+      margin-left: 25px;
+    }
+    
+    .photo_man {
+      width: 220px;
+      height: 220px;
+      margin: auto; 
+      margin-top: 0;    
+    }
+    .ofer__text_link {      
+    padding: 15px 20px;
+      font-size: 20px;
+    }
+    .address__name {
+      margin-left: auto;
+     }
+   
+    .address__name_schedule {
+      font-size:  15px;
+    }
+    .ofer__text {
+        padding-bottom: 20px;
+    }
+        
+  }
+@media (max-width: 469px) {
+  .ofer__title {
+    font-size: 35px;
+    text-align: center;
+  }
+  .ofer__title_two {
+    font-size: 30px;
+  }
+  .ofer__title_three {
+  font-size: 18px;
+  padding: 10px 10px 10px 0;
+  }
+  .ofer__text {
+    font-size: 13px;
+  }
+  .address__name {
+    width: 233px;
+    height: 336px;
+    margin-top: 10px;
+    margin-left: auto;
+    padding: 30px 10px;
+   }
+   .address__name_address {
+     font-size: 17px;
+   }
+   .address__name_schedule {
+     font-size:  15px;
+     margin-top: 30px;
+   }
+   .testimonials {
+    width: 100%;
+    height: 597px;
+  }
+  .ofer__title_four {
+    font-size: 34px;
+    padding-top: 32px;
+  }
+  .ofer__text_link {
+    font-size: 18px;
+  padding: 10px 30px;
+  }
+}
+@media (max-width: 340px) {
+  .ofer__title {
+    font-size: 25px;
+    text-align: center;
+  }
+  .ofer__title_two {
+    font-size: 28px;
+  }
+  .ofer__title_three {
+  font-size: 16px;
+  padding: 10px 10px 10px 0;
+  }
+  .ofer__text {
+    font-size: 13px;
+    text-align: center;
+  }
+  .address__name {
+    width: 160px;
+    height: 336px;
+    margin-top: 10px;
+    margin-left: auto;
+    padding: 30px 3px;
+   }
+   .address__name_address {
+     font-size: 15px;
+   }
+   .address__name_phone {
+     font-size: 19px;
+   }
+   .address__name_schedule {
+     font-size:  14px;
+     margin-top: 30px;
+   }
+   .testimonials {
+    width: 100%;
+    height: 597px;
+  }
+  .ofer__title_four {
+    font-size: 34px;
+    padding-top: 32px;
+  }
+  .ofer__text_link {
+  padding: 30px 10px;
+  }
+.ofer__text_bold {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding-bottom: 60px;
+}
+}
